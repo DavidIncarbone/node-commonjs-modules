@@ -1,0 +1,14 @@
+{
+  "name": "commonjs-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hobbies.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node people.js",
+    "dev": "node --watch people.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
