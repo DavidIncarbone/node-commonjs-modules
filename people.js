@@ -21,7 +21,7 @@ function personFullInfo() {
 
     const personInfo = person(firstName, lastName);
     const hobbiesInfo = myHobbiesList(hobbyOne, hobbyTwo, hobbyThree);
-    console.log(hobbiesInfo);
+
 
     return {
         fullName: personInfo.firstName + " " + personInfo.lastName,
@@ -29,4 +29,15 @@ function personFullInfo() {
     }
 };
 
-console.log(personFullInfo());
+// BONUS
+
+const processArgv = process.argv;
+processArgv.push(firstName, lastName, hobbyOne, hobbyTwo, hobbyThree)
+console.log(processArgv)
+console.log(processArgv[2] ?? "Nessun nome inserito",
+    processArgv[3] ?? "Nessun cognome inserito",
+    processArgv[4] ?? "Nessun hobby inserito",
+    processArgv[5] ?? "Nessun hobby inserito",
+    processArgv[6] ?? "Nessun hobby inserito")
+
+
